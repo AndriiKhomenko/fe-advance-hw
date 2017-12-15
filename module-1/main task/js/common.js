@@ -20,18 +20,4 @@ let lastSymbolOfThirdLine = (thirdLine.charAt(lengthOfThirdLine-1));
 let positionOfSymbol1 = (firstLine.indexOf("["));
 let positionOfSymbol2 = (firstLine.indexOf("]"));
 
-console.log(`Длина первой строки - ${lengthOfFirstLine} символов
-Длина второй строки - ${lengthOfSecondLine} символов 
-Длина третей строки - ${lengthOfThirdLine} символов
-
-Первый символ первой строки - ${firstSymbolOfFirstLine}
-Последний символ первой строки - ${lastSymbolOfFirstLine}
-
-Первый символ второй строки - ${firstSymbolOfSecondLine}
-Последний символ второй строки - ${lastSymbolOfSecondLine}
-
-Первый символ третей строки - ${firstSymbolOfThirdLine}
-Последний символ третей строки - ${lastSymbolOfThirdLine}
-
-Позиция символа [ - ${positionOfSymbol1}
-Позиция символа ] - ${positionOfSymbol2}`);
+console.log(`Длина первой строки - ${lengthOfFirstLine} символов\nДлина второй строки - ${lengthOfSecondLine} символов\nДлина третей строки - ${lengthOfThirdLine} символов\nПервый символ первой строки - ${firstSymbolOfFirstLine}\nПоследний символ первой строки - ${lastSymbolOfFirstLine}\nПервый символ второй строки - ${firstSymbolOfSecondLine}\nПоследний символ второй строки - ${lastSymbolOfSecondLine}\nПервый символ третей строки - ${firstSymbolOfThirdLine}\nПоследний символ третей строки - ${lastSymbolOfThirdLine}\nПозиция символа [ - ${positionOfSymbol1}\nПозиция символа ] - ${positionOfSymbol2}`);
