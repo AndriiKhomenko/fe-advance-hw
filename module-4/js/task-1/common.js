@@ -19,3 +19,22 @@ return keyboard;
 }
 
 console.log(addKeyboardLayout());
+
+let result = addKeyboardLayout();
+
+function getRandCharInRow(row) {
+	row = prompt("Введите номер строки от 0 до 2");
+	let keyboard = result;
+	let randomItem = keyboard[row][Math.floor(Math.random()*keyboard.length)];
+	return randomItem;
+}
+
+console.log(getRandCharInRow());
+
+function getRandCharInAlph() {
+		let keyboard = result;
+		let randomItem = keyboard[Math.floor(Math.random()*keyboard.length)][Math.floor(Math.random()*keyboard.length)];
+		return randomItem;
+}
+
+console.log(getRandCharInAlph());
