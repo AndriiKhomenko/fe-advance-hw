@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
+@media only screen and (max-width: 480px){
 header{
 	display: flex;
 	position: relative;
@@ -40,7 +41,7 @@ h1{
 	left: -414px;
 	height: 300px;
 	width: 406px;
-	background: red;
+	background: lime;
 }
 .move-right{
 	left: 0;
@@ -52,29 +53,4 @@ h1{
 	transition: 0.5s;
 	transition-timing-function: ease-in;
 }
-/*#menu{
-	position: relative;
-	background: lime;
-	width: 400px;
-	height: 600px;
 }
-.submenu {
-	position: absolute;
-	left: -52%;
-}
-.move{
-	position: absolute;
-	left: 0;
-	background: red;
-	height: 600px;
-	width: 200px;
-	transition: 1s;
-	transition-timing-function: ease-out;
-}
-#display_submenu{
-	background: yellow;
-	border: 2px solid orange;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-}*/
