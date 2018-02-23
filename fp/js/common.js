@@ -18,4 +18,4 @@ function myMove(e){
 			a.classList.add("move-left");
 	}
 }
-window.addEventListener("click", myMove);
+window.addEventListener("touchstart", myMove);
