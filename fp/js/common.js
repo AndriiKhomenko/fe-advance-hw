@@ -20,16 +20,17 @@ function myMove(e){
 }
 window.addEventListener("click", myMove);
 
-window.addEventListener('load', function(){ // после загрузки страницы
-    document.body.addEventListener('touchstart', function(e){
-        alert(e.changedTouches[0].pageX) // показ коррдинат места прикосновения по X-у.
+window.addEventListener('load', function(){
+    swipearea = document.getElementById('wrapper')
+    swipearea.addEventListener('touchstart', function(e){
+        startX = e.clientX;
+        startY = e.clientY;
     }, false)
-}, false);
-    // swipearea.addEventListener('touchend', function(e){
-    //     endX = e.changedTouches[0].clientX
-    //     endY = e.changedTouches[0].clientY
-    //     if (endX-startX>=30 && (Math.abs(endY-startY)<=200)){
-
-    //     }
-    // })
-// })
+    swipearea.addEventListener('touchend', function(e){
+        endX = e.clientX;
+        endY = e.clientY;
+        if (endX-startX>=30 && (Math.abs(endY-startY)<=100)){
+          alert("be");
+        }
+    }, false)
+}, false)
