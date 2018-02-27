@@ -20,12 +20,11 @@ function myMove(e){
 }
 window.addEventListener("click", myMove);
 
-window.addEventListener("load", function(){
-    body.addEventListener('touchstart', function(e){
-        startX = e.changedTouches[0].clientX;
-        startY = e.changedTouches[0].clientY;
-        alert(startX);
+window.addEventListener('load', function(){ // после загрузки страницы
+    document.body.addEventListener('touchstart', function(e){
+        alert(e.changedTouches[0].pageX) // показ коррдинат места прикосновения по X-у.
     })
+})
     // swipearea.addEventListener('touchend', function(e){
     //     endX = e.changedTouches[0].clientX
     //     endY = e.changedTouches[0].clientY
