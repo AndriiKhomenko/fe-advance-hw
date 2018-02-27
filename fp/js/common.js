@@ -2,11 +2,11 @@ window.addEventListener("load", function(){
     let swipearea = document.getElementById("wrapper");
     let button = document.querySelector("#button");
     let a = document.querySelector(".menu");
-    swipearea.addEventListener("mousedown", function(e){
+    swipearea.addEventListener("touchstart", function(e){
         startX = e.clientX;
         startY = e.clientY;
     }, false)
-    swipearea.addEventListener("mouseup", function(e){
+    swipearea.addEventListener("touchend", function(e){
         endX = e.clientX;
         endY = e.clientY;
         if(endX-startX>0){
