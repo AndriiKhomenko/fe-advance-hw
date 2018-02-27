@@ -1,8 +1,3 @@
-
-	// if(e.target === card){
-	// 		a.classList.remove("move-right");
-	// 		a.classList.add("move-left");
-	// }
 window.addEventListener("load", function(){
     let swipearea = document.getElementById("wrapper");
     let button = document.querySelector("#button");
