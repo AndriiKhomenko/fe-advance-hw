@@ -32,4 +32,14 @@ window.addEventListener("load", function(){
 						a.classList.remove("move-left");
 					}
     }, false)
+    window.addEventListener('click', function(){
+    	if(a.classList.contains("move-right")){
+				document.querySelector(".head").style.display = "none";
+				document.querySelector(".head-1").style.display = "flex";
+			}
+			else{
+				document.querySelector(".head").style.display = "flex";
+				document.querySelector(".head-1").style.display = "none";
+			}
+    }, false)
 }, false)

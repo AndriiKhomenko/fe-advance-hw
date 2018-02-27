@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta charset="UTF-8">
@@ -15,28 +16,30 @@
 			<div class="line"></div>
 		</div>
 		<div class="menu">
-			<div class="img1"><label class="category">Фильмы</label></div>
+			<div id="block" class="img1"><label class="category">Фильмы</label></div>
 			<ul class="films">
-					<li>Категория 1</li>
-					<li>Категория 2</li>
-					<li>Категория 3</li>
-					<li>Категория 4</li>
+					<li><a href="#">Ужасы</a></li>
+      <li><a href="#">Фантастика</a></li>
+      <li><a href="#">Комедия</a></li>
+      <li><a href="#">Мультфильмы</a></li>
 			</ul>
-			<div class="img2"><label class="category">Сериалы</label></div>
-			<div class="img3"><label class="category">Избранное</label></div>
+			<div id="block" class="img2"><label class="category">Сериалы</label></div>
+			<div id="block" class="img3"><label class="category">Избранное</label></div>
 		</div>
 		<div class="head">
-			<img src="img/logo360.png" class="logo" alt="logo">
+			<img src="img/logo480.png" class="logo" alt="logo">
 			<h1>Mooogle</h1>
-			<img src="img/serch360.png" class="search" alt="search">
+			<img src="img/serch480.png" class="search" alt="search">
 		</div>
-		<!-- <div class="head-1">
-			<img src="img/serch360.png" class="logo" alt="search">
-			<div class="input-search">
-				<input type="text" placeholder="search">
-			</div>
-			<img src="img/mic360.png" class="search" alt="search">
-		</div> -->
+
+		<div class="head-1">
+		<div>
+		 <img src="img/serch480.png" class="header-1__search" alt="search">
+			<input class="input-search" type="text" placeholder="Search">
+		</div>
+
+			<img src="img/mic480.png" class="mic" alt="search">
+		</div>
 	</header>
 	<div id="wrapper"></div>
 	<script src="js/common.js"></script>
