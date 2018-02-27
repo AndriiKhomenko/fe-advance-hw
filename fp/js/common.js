@@ -3,12 +3,12 @@ window.addEventListener("load", function(){
     let button = document.querySelector("#button");
     let a = document.querySelector(".menu");
     swipearea.addEventListener("touchstart", function(e){
-        startX = touch.clientX;
-        startY = touch.clientY;
+        startX = e.changedTouches[0].clientX;
+        startY = e.changedTouches[0].clientY;
     }, false)
-    swipearea.addEventListener("touchend", function(touch){
-        endX = touch.clientX;
-        endY = touch.clientY;
+    swipearea.addEventListener("touchend", function(e){
+        endX = e.changedTouches[0].clientX;
+        endY = e.changedTouches[0].clientY;
         if(endX-startX>0){
         	if(a.classList.contains("move-left")){
 						a.classList.remove("move-left");
