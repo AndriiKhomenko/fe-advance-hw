@@ -3,12 +3,12 @@ window.addEventListener("load", function(){
     let button = document.querySelector("#button");
     let a = document.querySelector(".menu");
     swipearea.addEventListener("touchstart", function(e){
-        startX = e.targetTouches[0].clientX;
-        startY = e.targetTouches[0].clientY;
+        startX = touch.clientX;
+        startY = touch.clientY;
     }, false)
-    swipearea.addEventListener("touchend", function(e){
-        endX = e.targetTouches[0].clientX;
-        endY = e.targetTouches[0].clientY;
+    swipearea.addEventListener("touchend", function(touch){
+        endX = touch.clientX;
+        endY = touch.clientY;
         if(endX-startX>0){
         	if(a.classList.contains("move-left")){
 						a.classList.remove("move-left");
@@ -22,7 +22,7 @@ window.addEventListener("load", function(){
         a.classList.add("move-left");
       	}
     }, false)
-    button.addEventListener('click', function(e){
+    button.addEventListener('click', function(){
 					if(a.classList.contains("move-right")){
 						a.classList.remove("move-right");
 						a.classList.add("move-left");
