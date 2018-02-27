@@ -21,8 +21,7 @@ function myMove(e){
 window.addEventListener("click", myMove);
 
 window.addEventListener("load", function(){
-    swipearea = document.getElementById("cards")
-    swipearea.addEventListener('touchstart', function(e){
+    body.addEventListener('touchstart', function(e){
         startX = e.changedTouches[0].clientX;
         startY = e.changedTouches[0].clientY;
         alert(startX);
