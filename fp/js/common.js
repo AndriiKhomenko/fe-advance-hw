@@ -30,7 +30,14 @@ window.addEventListener('load', function(){
         endX = e.clientX;
         endY = e.clientY;
         if (endX-startX>=30 && (Math.abs(endY-startY)<=100)){
-          alert("be");
+          if(a.classList.contains("move-right")){
+						a.classList.remove("move-right");
+						a.classList.add("move-left");
+					}
+					else{
+					a.classList.add("move-right");
+					a.classList.remove("move-left");
+					}
         }
     }, false)
 }, false)
