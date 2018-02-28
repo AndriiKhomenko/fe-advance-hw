@@ -106,12 +106,10 @@ h1{
 .move-right{
 	left: 0;
 	transition: 0.5s;
-	transition-timing-function: ease-out;
 }
 .move-left{
 	left: -414px;
 	transition: 0.5s;
-	transition-timing-function: ease-in;
 }
  #block {
    display: flex;
