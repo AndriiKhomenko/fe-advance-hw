@@ -1,7 +1,10 @@
 window.addEventListener("load", function(){
-    let swipearea = document.getElementById("wrapper");
+    let tap = document.getElementById("wrapper");
+    let swipearea = document.body;
     let button = document.querySelector("#button");
     let a = document.querySelector(".menu");
+    let search = document.querySelector(".head__search");
+    let lines = document.getElementsByClassName("button__line");
     swipearea.addEventListener("touchstart", function(e){
         startX = e.changedTouches[0].clientX;
         startY = e.changedTouches[0].clientY;
@@ -14,32 +17,45 @@ window.addEventListener("load", function(){
 						a.classList.remove("move-left");
         	}
         	a.classList.add("move-right");
+            lines[1].style.display = "none";
+            lines[0].classList.add("transformed-1");
+            lines[2].classList.add("transformed-2");
         }
         else if(endX-startX<=0){
         	if(a.classList.contains("move-right")){
         		a.classList.remove("move-right");
         	}
         a.classList.add("move-left");
+        lines[1].style.display = "block";
+        lines[0].classList.remove("transformed-1");
+        lines[2].classList.remove("transformed-2");
       	}
     }, false)
     button.addEventListener('click', function(){
 					if(a.classList.contains("move-right")){
 						a.classList.remove("move-right");
 						a.classList.add("move-left");
+                        lines[1].style.display = "block";
+                        lines[0].classList.remove("transformed-1");
+                        lines[2].classList.remove("transformed-2");
 					}
 					else{
 						a.classList.add("move-right");
 						a.classList.remove("move-left");
+                        lines[1].style.display = "none";
+                        lines[0].classList.add("transformed-1");
+                        lines[2].classList.add("transformed-2");
 					}
     }, false)
-    window.addEventListener('click', function(){
-    	if(a.classList.contains("move-right")){
+    search.addEventListener('click', function(){
 				document.querySelector(".head").style.display = "none";
 				document.querySelector(".head-1").style.display = "flex";
-			}
-			else{
-				document.querySelector(".head").style.display = "flex";
-				document.querySelector(".head-1").style.display = "none";
-			}
+    }, false)
+    tap.addEventListener('click', function(){
+                a.classList.remove("move-right");
+                a.classList.add("move-left");
+                lines[1].style.display = "block";
+                lines[0].classList.remove("transformed-1");
+                lines[2].classList.remove("transformed-2");
     }, false)
 }, false)

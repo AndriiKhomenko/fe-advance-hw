@@ -28,36 +28,35 @@ a {
  a:hover {
   color: #77c1bb;
  }
-.logo{
+.head__logo{
 	height: 31px;
 	width: 34px;
 	margin:0 11px 0 23px;
 }
-.search{
+.head__search{
 	width: 25px;
 	height: 25px;
 	margin-top: 4px;
 	margin-left: 208px;
 }
 .head-1{
- display: none;
+display: none;
+justify-content: space-between;
  align-items: center;
  width: 100%;
- display: flex;
- justify-content: space-between;
 }
  .head-1 div {
   display: flex;
   align-items: center;
  }
- header-1__search {
+ head-1__search {
   width: 25px;
   height: 27px;
  }
- .head-1 div .header-1__search {
+ .head-1 div .head-1__search {
   margin: 0 14px 0 25px;
  }
-.input-search{
+.head-1__search__input-search{
  width: 150px;
  height: 19px;
   background: #77c1bb;
@@ -74,16 +73,26 @@ h1{
 }
 #button{
 	margin-top: 8px;
-	height: 17px;
+	height: 18px;
 	width: 27px;
 }
-.line{
+.button__line{
 	width: 27px;
-	height: 3px;
+	height: 4px;
 	background: #372c48;
 }
-.line:nth-child(2){
+.button__line:nth-child(2){
 	margin: 3px 0 3px;
+}
+.transformed-1{
+	margin-top: 7px;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.transformed-2{
+	margin-top: -4px;
+  transform: rotate(-45deg);
+  transition: 0.5s;
 }
 .menu{
 	position: absolute;
@@ -112,14 +121,14 @@ h1{
   background-size: contain;
  }
 
-.img1{
+.menu__img1{
 	background: url(../img/film480.png) no-repeat;
 }
-.img2{
+.menu__img2{
 	background: url(../img/TVseries480.png) no-repeat;
 	margin-top: 38px;
 }
-.img3{
+.menu__img3{
 	background: url(../img/favorites480.png) no-repeat;
 	margin-top: 32px;
 }
@@ -133,7 +142,7 @@ h1{
  .category:hover {
   color: #77c1bb;
  }
-.films{
+.menu__films{
  font-size: 15px;
 margin-left: 96px;
 }
