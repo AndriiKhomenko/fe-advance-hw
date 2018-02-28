@@ -1,6 +1,5 @@
 window.addEventListener("load", function(){
-    let tap = document.getElementById("wrapper");
-    let swipearea = document.body;
+    let swipearea = document.getElementById("wrapper");
     let button = document.querySelector("#button");
     let a = document.querySelector(".menu");
     let search = document.querySelector(".head__search");
@@ -50,12 +49,5 @@ window.addEventListener("load", function(){
     search.addEventListener('click', function(){
 				document.querySelector(".head").style.display = "none";
 				document.querySelector(".head-1").style.display = "flex";
-    }, false)
-    tap.addEventListener('click', function(){
-                a.classList.remove("move-right");
-                a.classList.add("move-left");
-                lines[1].style.display = "block";
-                lines[0].classList.remove("transformed-1");
-                lines[2].classList.remove("transformed-2");
     }, false)
 }, false)
