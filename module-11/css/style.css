@@ -1,0 +1,29 @@
+input{
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+button{
+	border: 1px solid brown;
+	background: orange;
+}
+#js-output{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0 10px 10px;
+}
+.el{
+	margin: 7px 0 7px 7px;
+	color: red;
+}
+.userActions{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+.userActions > *{
+	margin-left: 5px;
+}
+.userActionsContainer{
+	display: flex;
+	flex-direction: column;
+}
