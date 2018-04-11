@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="GET">
+      <div class="row">
+
+        <div>
+          <input placeholder="first name" id="first_name" type="text" class="validate" pattern="[A-Za-z]{2,12}">
+          <label for="first_name"></label>
+        </div>
+
+        <div>
+          <input placeholder="last name" id="last_name" type="text" class="validate" pattern="[A-Za-z]{2,12}">
+          <label for="last_name"></label>
+        </div>
+
+        <div>
+          <input placeholder="tel" id="tel" type="text" class="validate" pattern="[0-9]{10}">
+          <label for="tel"></label>
+        </div>
+
+        <div>
+          <button id="submit-btn" type="submit" name="action">Submit</button>
+        </div>
+
+      </div>
+    </form>
+
+    <ul class="results">
+    </ul>
+
+  </div>
+</div>
+	<script src="js/common.js"></script>
+</body>
+</html>
