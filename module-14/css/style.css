@@ -1,0 +1,9 @@
+.wrapper{
+	width: 150px;
+	margin: 0 auto;
+}
+button{
+	padding: 10px 20px;
+	background: orange;
+	border: 1px solid brown;
+}
