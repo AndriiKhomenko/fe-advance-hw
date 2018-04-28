@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 200px;
+}
+p{
+	width: 300px;
+}
+#wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#movieCard{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 300px;
+}
